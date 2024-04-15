@@ -2,37 +2,41 @@
 
 .container-section {
     width: 100%;
-    height: calc(90vh - 180px);
+    height: 80vh ;
     background-color: rgba(0, 0, 0, 0.8);
     background-image: url('https://img.freepik.com/photos-premium/desktop-source-code-wallpaper-by-computer-langage-codage-programmation_33771-593.jpg');
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: hsl(0, 0%, 100%);
-    padding-top: 150px;
-
+    padding-top: 180px;
 }
-
-.img1 img {
-    width: 220px;
-    height: 300px;
-    position: relative;
-    z-index: 1;
-
+.parent{
+    margin-top: 100px;
 }
-.img2 img{
-    width: 220px;
-    height: 300px;
+.justifydiv{
+    display: flex;
+    justify-content: center;
+}
+.img1  {
+    width: 308px;
+    height: 325px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
     
-    z-index: 1;
+}
+.img2{
+    width: 499px;
+    height: 468px;
+    
 }
 
 .container-section .text {
-    position: relative;
-    top: -220px;
     width: auto;
-    
 }
 
 .text span,
@@ -42,4 +46,15 @@
     line-height: 87px;
     font-weight: 800;
 
+}
+
+.text span{
+    background: #171717;
+    width: 100%;
+}
+.text p{
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300; 
 }

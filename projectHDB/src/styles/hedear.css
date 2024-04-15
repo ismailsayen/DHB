@@ -7,4 +7,5 @@ header {
     height: 130px;
     border-bottom:1px solid white;
     position: absolute;
+    z-index: 1000;
 }
