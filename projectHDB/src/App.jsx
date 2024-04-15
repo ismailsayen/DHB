@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Routes, } from "react-router-dom";
 import Header from "./components/Header";
 import Section from "./components/Section";
 function App() {
-
+  const linkPhone = 'https://wa.me/18258690354';
 
   return (
     <div>
       <BrowserRouter>
         <Header />
-          <Section />
+        <Section linkPhone={linkPhone} />
       </BrowserRouter>
     </div>
   );
