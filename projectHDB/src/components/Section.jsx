@@ -6,7 +6,7 @@ function Section() {
     <div className='container-section'>
       <div className='parent'>
         <div className='justifydiv'>
-          <img src="./images/img1.png" className='img1' />
+          <img src="./images/img.svg" className='img1' />
           <div className='text'>
             <span>VOTRE SITE PRET </span>
             <div>EN MOINS DE 48H</div>
