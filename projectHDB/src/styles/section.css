@@ -2,33 +2,26 @@
 
 .container-section {
     width: 100%;
-    height: 80vh ;
+    height: 100vh ;
     background-color: rgba(0, 0, 0, 0.8);
-    background-image: url('https://img.freepik.com/photos-premium/desktop-source-code-wallpaper-by-computer-langage-codage-programmation_33771-593.jpg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: linear-gradient(to left,#DB858a,#e7e7e7);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: hsl(0, 0%, 100%);
     padding-top: 180px;
 }
-.parent{
-    margin-top: 100px;
-}
+
 .justifydiv{
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse ;
 }
 .img1  {
     width: 308px;
     height: 325px;
-    position: absolute;
-    z-index: 2;
-    left: 45%;
-    top: 22%;
-}
+    position: relative;
+    z-index: 2;}
 .img2{
     width: 499px;
     height: 468px;
@@ -49,7 +42,7 @@
 }
 
 .text span{
-    background: #171717;
+    background-color: #171717;
     width: 100%;
 }
 .text p{
