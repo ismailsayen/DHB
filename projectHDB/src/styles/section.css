@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.container-section {
+    width: 100%;
+    height: calc(90vh - 180px);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('https://img.freepik.com/photos-premium/desktop-source-code-wallpaper-by-computer-langage-codage-programmation_33771-593.jpg');
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: hsl(0, 0%, 100%);
+    padding-top: 150px;
+
+}
+
+.img1 img {
+    width: 220px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+
+}
+.img2 img{
+    width: 220px;
+    height: 300px;
+    
+    z-index: 1;
+}
+
+.container-section .text {
+    position: relative;
+    top: -220px;
+    width: auto;
+    
+}
+
+.text span,
+.text div {
+    font-family: "Merriweather", serif;
+    font-size: 58px;
+    line-height: 87px;
+    font-weight: 800;
+
+}
