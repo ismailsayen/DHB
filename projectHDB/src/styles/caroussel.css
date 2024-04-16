@@ -1,7 +1,7 @@
 .caross-con{
     width: 99%;
     margin: 0 auto;
-    background-color: #6CDAE7;
+    background-image: linear-gradient(to left,#6CDAE7,#e7e7e7);
     color: white;
     height: 60vh;
     border: 1px solid white;
@@ -13,4 +13,11 @@
     width: 100%;
     color: black;
     text-align: center;
+}
+.images-cont{
+    width: 100%;
+}
+
+.img{
+    object-fit: contain;
 }
