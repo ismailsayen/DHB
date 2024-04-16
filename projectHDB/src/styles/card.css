@@ -22,12 +22,29 @@ hr {
 
 .details{
     display: flex;
-    border: solid orange;
 }
-.vert-hr{
-    border-left: 1px solid black;
-    height: 100px;
-    margin: 0 10px;
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.col-type{
+    margin-bottom: 10px;
+}
+
+.col-price{
+    text-align: center;
+}
+
+.col p span , .col-price{
+    font-weight: 600;
+}
+
+.col1, .col2 {
+    width:50%;
 }
 
 .card button {

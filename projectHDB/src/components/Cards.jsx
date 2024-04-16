@@ -60,24 +60,30 @@ function Cards() {
 
           {ele.developmentCosts.length > 1 ? (
             <div className="details">
-              <div className="col">
-                <p>
-                  <span>Type :</span> {ele.developmentCosts[0].type}
+              <div className="col col1">
+                <div>
+                  <p className="col-type">
+                    <span>Type :</span> {ele.developmentCosts[0].type}
+                  </p>
+                  <p>-{ele.developmentCosts[0].description}</p>
+                </div>
+                <p className="col-price">
+                  {ele.developmentCosts[0].cost}
                 </p>
-                <p>-{ele.developmentCosts[0].description}</p>
-                <p>Cout: {ele.developmentCosts[0].cost}</p>
               </div>
 
-              <div className="col">
-                <p className="col-type">
-                  <span>Type :</span>
-                  {ele.developmentCosts[1].type}
-                </p>
-                <p className="col-desc">
-                  -{ele.developmentCosts[1].description}
-                </p>
+              <div className="col col2">
+                <div>
+                  <p className="col-type">
+                    <span>Type :</span>
+                    {ele.developmentCosts[1].type}
+                  </p>
+                  <p className="col-desc">
+                    -{ele.developmentCosts[1].description}
+                  </p>
+                </div>
                 <p className="col-price">
-                  Cout: {ele.developmentCosts[1].cost}
+                  {ele.developmentCosts[1].cost}
                 </p>
               </div>
             </div>
@@ -93,8 +99,8 @@ function Cards() {
                   {ele.developmentCosts[0].description}
                 </p>
                 <p>
-                  <span className="col-price">Cout: </span>
-                  {ele.developmentCosts[0].cost}
+                  <span className="col-price"> 
+                  {ele.developmentCosts[0].cost}</span>
                 </p>
               </div>
             </div>
