@@ -1,0 +1,1 @@
+export const linkPhone = 'https://wa.me/18258690354';
