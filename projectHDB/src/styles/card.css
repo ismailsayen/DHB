@@ -1,0 +1,16 @@
+.card{
+    width: 500px;
+    border: 1px solid #75dbe7;
+}
+hr {
+    width: 250px;
+    color: #75dbe7;
+}
+.details{
+    display: flex;
+}
+.vert-hr{
+    border-left: 1px solid black;
+    height: 100px;
+    margin: 0 10px;
+}

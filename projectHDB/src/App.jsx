@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Section linkPhone={linkPhone} />
-        <Section2/>
+        <Section2 linkPhone={linkPhone}/>
       </BrowserRouter>
     </div>
   );

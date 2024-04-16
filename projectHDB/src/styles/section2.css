@@ -1,6 +1,38 @@
-.container{
-    width: 98%;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    width: 99%;
+    
     background-color: #F3F4F5;
     margin: auto;
+    position: relative;
+    bottom: 2%;
 }
+
+.container .information {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.container .information div {
+    width: 620px;
+}
+
+.container .information div h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+.cont-cards{
+    width: 80%;
+    display: flex;
+    row-gap: 1;
+    margin: 0 auto;
+}
+
+
