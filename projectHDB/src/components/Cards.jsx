@@ -55,12 +55,12 @@ function Cards() {
     <>
       {services.map((ele, ind) => (
         <div key={ind} className="card">
-          <p>site web : {ele.platform}</p>
+          <h3>site web : {ele.platform}</h3>
           <hr />
 
           {ele.developmentCosts.length > 1 ? (
             <div className="details">
-              <div className="">
+              <div className="col">
                 <p>
                   <span>Type :</span> {ele.developmentCosts[0].type}
                 </p>
@@ -68,28 +68,32 @@ function Cards() {
                 <p>Cout: {ele.developmentCosts[0].cost}</p>
               </div>
 
-              <div className="">
-                <p>
+              <div className="col">
+                <p className="col-type">
                   <span>Type :</span>
                   {ele.developmentCosts[1].type}
                 </p>
-                <p>-{ele.developmentCosts[1].description}</p>
-                <p>Cout: {ele.developmentCosts[1].cost}</p>
+                <p className="col-desc">
+                  -{ele.developmentCosts[1].description}
+                </p>
+                <p className="col-price">
+                  Cout: {ele.developmentCosts[1].cost}
+                </p>
               </div>
             </div>
           ) : (
             <div className="details">
-              <div className="">
-                <p>
+              <div className="col">
+                <p className="col-type">
                   <span>Type :</span>
                   {ele.developmentCosts[0].type}
                 </p>
-                <p>
+                <p className="col-desc">
                   <span>- </span>
                   {ele.developmentCosts[0].description}
                 </p>
                 <p>
-                  <span>Cout: </span>
+                  <span className="col-price">Cout: </span>
                   {ele.developmentCosts[0].cost}
                 </p>
               </div>
@@ -98,7 +102,7 @@ function Cards() {
 
           <hr />
           <div className="card-foot">
-            <h2>Livraison à : {ele.turnaroundTime}</h2>
+            <h4>Livraison à : {ele.turnaroundTime}</h4>
             <a href={linkPhone} target="_blank">
               <button>GO-&gt;</button>
             </a>

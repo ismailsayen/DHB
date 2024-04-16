@@ -1,19 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-    background-color: #75DBE7;
-  }
-  
-  .slick-slide > div img {
-    transition: transform 0.3s ease; 
-  }
-  
-  .slick-slide > div img:hover {
-    transform: translateY(-5px); 
-  }
-  
+:root{
+  --brand-color:#1cc5d7;
+  --brand-color-950:#0e333e;
+  --brand-color-600:#188ea2;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: unset;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 900;
+}
+h2{
+  font-size: 45px;
+  font-weight: 700;
+}
+h3{
+  font-size: 30px;
+  font-weight: 700;
+}
+h4{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+* {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--brand-color-900);
+}
+
+body {
+  background-color: #75dbe7;
+  overflow-x: hidden;
+}
+
+.slick-slide > div img {
+  transition: transform 0.3s ease;
+}
+
+.slick-slide > div img:hover {
+  transform: translateY(-5px);
+}
+
+.section {
+  /* border: solid red ; */
+  background-color: white;
+  padding-inline: 5rem;
+}
+
+.sec1{
+  padding-top: 5rem;
+}

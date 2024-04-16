@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/caroussel.css';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -30,7 +29,7 @@ function Caroussel() {
                     <Slider {...settings} >
                         {
                             pictures.map((ele, ind) =>
-                                <img src={`./images/${ele.url}`} width={'400'} height={'400'} className='img'/>
+                                <img key={ind} src={`./images/${ele.url}`} width={'400'} height={'400'} className='img'/>
                             )}
                     </Slider>
                 </div>

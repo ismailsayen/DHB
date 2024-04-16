@@ -1,8 +1,8 @@
 
 import { BrowserRouter, } from "react-router-dom";
 import Header from "./components/Header";
-import Section from "./components/Section";
-import Section2 from "./components/Section2";
+import Hero from "./components/Hero";
+import Section1 from "./components/Section1";
 import Caroussel from "./components/Caroussel";
 import Flyer from "./components/Flyer";
 function App() {
@@ -11,8 +11,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        <Section />
-        <Section2 />
+        <Hero />
+        <Section1 />
         <Caroussel />
         <Flyer />
       </BrowserRouter>

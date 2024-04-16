@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/hedear.css';
 export default function Header() {
     return (
