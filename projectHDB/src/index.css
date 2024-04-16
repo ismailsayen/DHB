@@ -7,9 +7,12 @@
   body{
     background-color: #75DBE7;
   }
-
-  .slick-slide > div:hover {
-    margin: 0 5px;
-    transform: scaleY(2px);
+  
+  .slick-slide > div img {
+    transition: transform 0.3s ease; 
   }
-
+  
+  .slick-slide > div img:hover {
+    transform: translateY(-5px); 
+  }
+  

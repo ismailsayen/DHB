@@ -3,7 +3,7 @@ import '../styles/section.css';
 
 function Section({ linkPhone }) {
   return (
-    <div className='container-section'>
+    <div className='container-section' id="firs">
       <div className='parent'>
         <div className='justifydiv'>
           <img src="./images/img.svg" className='img1' />
