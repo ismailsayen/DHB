@@ -6,6 +6,12 @@ import { linkPhone } from "../const";
 function Hero() {
     const [scrollY, setScrollY] = useState(0);
     const controls = useAnimation();
+    let speed = 0;
+    if (window.innerWidth > 400) {
+        speed = 2.5;
+    } else {
+        speed = 0.5;
+    }
 
     useEffect(() => {
         function handleScroll() {
@@ -21,33 +27,20 @@ function Hero() {
 
     useEffect(() => {
         controls.start({
-            x: scrollY * 2.5,
+            x: scrollY * speed,
         });
-    }, [scrollY, controls]);
+    }, [scrollY, controls, speed]);
 
     return (
         <div className="section hero">
             <div className="div-center">
                 <div className="text">
                     <motion.img
-                        animate={["rotate"]}
-                        whileHover={["grow"]}
+                        animate={{ rotate: [null, -5, 5, 0] }}
+                        whileHover={{ scale: 1.1 }}
                         variants={{
-                            grow: {
-                                scale: 1.1,
-                            },
-                            rotate: {
-                                rotate: [null, -5, 5, 0],
-                                transition: {
-                                    duration: 10,
-                                    repeat: Infinity,
-                                    repeatDelay: 0.2,
-                                    repeatType: "reverse",
-                                },
-                            },
                             initial: {
                                 y: [-20, 20],
-
                                 transition: {
                                     duration: 2,
                                     repeat: Infinity,
@@ -62,7 +55,7 @@ function Hero() {
                         Votre Site Prêt en Moins de<span> 48H</span>
                     </h1>
                     <p>Des solutions numériques pour votre réussite</p>
-                    <a href={linkPhone} target="_blank">
+                    <a href={linkPhone} target="_blank" rel="noopener noreferrer">
                         <button className="btn">Contactez-Nous</button>
                     </a>
                 </div>
