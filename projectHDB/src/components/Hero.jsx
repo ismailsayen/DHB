@@ -5,13 +5,8 @@ import { linkPhone } from "../const";
 
 function Hero() {
     const [scrollY, setScrollY] = useState(0);
+    const [speed, setSpeed] = useState(0);
     const controls = useAnimation();
-    let speed = 0;
-    if (window.innerWidth > 400) {
-        speed = 2.5;
-    } else {
-        speed = 0.5;
-    }
 
     useEffect(() => {
         function handleScroll() {
@@ -26,10 +21,14 @@ function Hero() {
     }, []);
 
     useEffect(() => {
+        setSpeed(window.innerWidth > 400 ? 2.5 : 0.5);
+    }, []);
+
+    useEffect(() => {
         controls.start({
             x: scrollY * speed,
         });
-    }, [scrollY, controls, speed]);
+    }, [scrollY, speed, controls]);
 
     return (
         <div className="section hero">
