@@ -54,7 +54,7 @@ function Cards() {
   return (
     <>
       {services.map((ele, ind) => (
-        <div key={ind} className="card">
+        <div key={ind} className="card" id="pack">
           <h3>Site web : {ele.platform}</h3>
           <hr />
 

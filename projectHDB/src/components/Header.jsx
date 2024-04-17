@@ -7,7 +7,7 @@ export default function Header() {
                 <ul>
                     <li><a href='#'>Pack 1</a></li>
                     <li><a href='#'>Projets</a></li>
-                    <li><a href='#'>Pack 2</a></li>
+                    <li><a href='#'>Contactez-Nous</a></li>
                 </ul>
             </div>
         </header>
