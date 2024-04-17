@@ -152,6 +152,7 @@
   .img2 {
     width: 250px;
     left: 0;
+    margin-top: 12px;
   }
   .hero{
     height: 65vh;
