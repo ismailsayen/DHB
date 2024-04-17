@@ -1,8 +1,7 @@
 .caross-con{
-    width: 99%;
-    margin: 0 auto;
     background-image: linear-gradient(to left,#6CDAE7,#e7e7e7);
-    height: 68vh;
+    /* overflow: hidden; */
+    border: solid;
 }
 .parent-caross{
     padding: 20px 0;}
