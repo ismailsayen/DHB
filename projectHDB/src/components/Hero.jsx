@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import '../styles/hero.css'; // Importez votre fichier CSS pour les styles supplémentaires
+import '../styles/hero.css'; 
 import { linkPhone } from "../const";
 
 function Hero() {

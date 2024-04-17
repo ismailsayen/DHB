@@ -9,6 +9,7 @@ header {
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 80px;
 }
 .links{
     width: 20%;
