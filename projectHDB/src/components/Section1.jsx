@@ -41,7 +41,7 @@ function Section1() {
         </div>
       </div>
       <div id="pack"></div>
-      <div  style={{ margin: "5rem" }} className="cont-cards" data-aos="fade-up"
+      <div  style={{ margin: "2rem" }} className="cont-cards" data-aos="fade-up"
         data-aos-duration="3000" >
         <Cards />
       </div>
