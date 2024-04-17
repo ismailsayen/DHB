@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Section1 from "./components/Section1";
 import Caroussel from "./components/Caroussel";
 import Flyer from "./components/Flyer";
+import Footer from "./components/Footer";
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
         <Section1 />
         <Caroussel />
         <Flyer />
+        <Footer />
       </BrowserRouter>
     </div>
   );
