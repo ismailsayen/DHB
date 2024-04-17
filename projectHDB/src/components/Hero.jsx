@@ -59,7 +59,7 @@ function Hero() {
                         className="img1"
                     />
                     <h1>
-                        Votre Site Pret en Moins de<span> 48H</span>
+                        Votre Site Prêt en Moins de<span> 48H</span>
                     </h1>
                     <p>Des solutions numériques pour votre réussite</p>
                     <a href={linkPhone} target="_blank">

@@ -12,7 +12,7 @@ const services = [
         cost: "$400",
       },
       {
-        type: "Avancé",
+        type: "Premium",
         description:
           "Personnalisations modérées et quelques fonctionnalités spécifiques",
         cost: "$400 à $600",
@@ -27,12 +27,12 @@ const services = [
         type: "Basique",
         description:
           "Utilisation de thèmes gratuits ou peu coûteux avec peu de personnalisations",
-        cost: "$500",
+        cost: "500$",
       },
       {
-        type: "Avancé",
+        type: "Premium",
         description: "Thèmes premium ou personnalisations modérées",
-        cost: "$600 à $800",
+        cost: "600$ à 800$",
       },
     ],
     turnaroundTime: "Près en 24h-72h",
@@ -44,7 +44,7 @@ const services = [
         type: "Exclusif",
         description:
           "Thèmes et design sur mesure, développement de plugins spécifiques, fonctionnalités uniques et intégrations complexes avec conception graphique de base HTML, CSS, JavaScript",
-        cost: "€1000+",
+        cost: "+1000$",
       },
     ],
     turnaroundTime: "Durée dépend de la demande du client",
@@ -55,7 +55,7 @@ function Cards() {
     <>
       {services.map((ele, ind) => (
         <div key={ind} className="card">
-          <h3>site web : {ele.platform}</h3>
+          <h3>Site web : {ele.platform}</h3>
           <hr />
 
           {ele.developmentCosts.length > 1 ? (
