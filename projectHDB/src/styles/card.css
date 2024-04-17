@@ -2,14 +2,16 @@
     border:4px solid var(--brand-color-950);
     border-radius: 8px;
     padding: 25px;
-    width: 30%;
-    min-width: 300px;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
+    width: 450px;
+    display: grid;
     gap: 2rem;
     height: fit-content;
     box-shadow: -6px 6px var(--brand-color-600);
+    transition: all 0.1s ease-in;
+}
+
+.card:hover{
+    scale: 1.01;
 }
 hr {
     width: 250px;
@@ -22,6 +24,7 @@ hr {
 
 .details{
     display: flex;
+    gap: 1rem;
 }
 
 .col{
@@ -32,15 +35,31 @@ hr {
 }
 
 .col-type{
+    text-align: center;
     margin-bottom: 10px;
+    font-size: 20px;
+    text-decoration: underline 3px var(--brand-color-600);
+    font-weight: 500;
+}
+
+.col-desc{
+    padding-left: 10px;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    margin-bottom: 1rem;
 }
 
 .col-price{
+    font-size: 2rem;
+    font-weight: 800;
     text-align: center;
+    color: var(--brand-color-600);
 }
 
-.col p span , .col-price{
-    font-weight: 600;
+.col-price{
+    font-weight: 500;
 }
 
 .col1, .col2 {

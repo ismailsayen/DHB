@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/flyer.css';
 import { linkPhone } from "../const";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Flyer() {
+    useEffect(() => {
+        AOS.init();
+    }, []);
     return (
-        <div className='container-fly'>
+        <div className='container-fly' data-aos="fade-up"
+            data-aos-duration="3000">
             <div className='flyer-description'>
                 <h2>PACK DESIGNER</h2>
                 <h3>Créez votre image de marque en toute simplicité.</h3>

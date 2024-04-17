@@ -6,7 +6,7 @@
 }
 
 .waves {
-	position: absolute;
+  position: absolute;
   min-width: 100vw;
   top: 1%;
   left: 0;
@@ -21,15 +21,26 @@
 }
 
 .sec1-content_information {
-	padding-inline: 2rem ;
-	width: 50%;
+  padding-inline: 2rem;
+  flex-grow: 1;
+  display: grid;
+  gap: 1rem;
 }
-.sec1-content .img	{
-	max-width:  50%;
-} 
+.sec1-content_information h2 {
+  color: var(--brand-color);
+  
+}
+.sec1-content_information {
+}
+.sec1-content_information {
+}
 
-.sec1-content .img img{
-	width:  100% ; 
+.sec1-content .img {
+  width: 40%;
+}
+
+.sec1-content .img img {
+  width: 100%;
 }
 
 .sec1 .information div h2 {
@@ -40,8 +51,8 @@
 .cont-cards {
   width: 100%;
   display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-	/* border:  solid red; */
+  /* border:  solid red; */
 }

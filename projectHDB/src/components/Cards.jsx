@@ -44,7 +44,7 @@ const services = [
         type: "Exclusif",
         description:
           "Thèmes et design sur mesure, développement de plugins spécifiques, fonctionnalités uniques et intégrations complexes avec conception graphique de base HTML, CSS, JavaScript",
-        cost: "$1000 et plus",
+        cost: "€1000+",
       },
     ],
     turnaroundTime: "Durée dépend de la demande du client",
@@ -63,35 +63,32 @@ function Cards() {
               <div className="col col1">
                 <div>
                   <p className="col-type">
-                    <span>Type :</span> {ele.developmentCosts[0].type}
+                    <span></span> {ele.developmentCosts[0].type}
                   </p>
-                  <p>-{ele.developmentCosts[0].description}</p>
+                  <p className="col-desc">
+                    {ele.developmentCosts[0].description}
+                  </p>
                 </div>
-                <p className="col-price">
-                  {ele.developmentCosts[0].cost}
-                </p>
+                <p className="col-price">{ele.developmentCosts[0].cost}</p>
               </div>
 
               <div className="col col2">
                 <div>
                   <p className="col-type">
-                    <span>Type :</span>
+                    <span></span>
                     {ele.developmentCosts[1].type}
                   </p>
                   <p className="col-desc">
-                    -{ele.developmentCosts[1].description}
+                    {ele.developmentCosts[1].description}
                   </p>
                 </div>
-                <p className="col-price">
-                  {ele.developmentCosts[1].cost}
-                </p>
+                <p className="col-price">{ele.developmentCosts[1].cost}</p>
               </div>
             </div>
           ) : (
             <div className="details">
               <div className="col">
                 <p className="col-type">
-                  Type :
                   <span></span>
                   {ele.developmentCosts[0].type}
                 </p>
@@ -99,17 +96,14 @@ function Cards() {
                   <span>- </span>
                   {ele.developmentCosts[0].description}
                 </p>
-                <p>
-                  <span className="col-price">
-                    {ele.developmentCosts[0].cost}</span>
-                </p>
+                <p className="col-price">{ele.developmentCosts[0].cost}</p>
               </div>
             </div>
           )}
 
           <hr />
           <div className="card-foot">
-            <h4>  {ele.turnaroundTime}</h4>
+            <h4> {ele.turnaroundTime}</h4>
             <a href={linkPhone} target="_blank">
               <button>GO-&gt;</button>
             </a>
