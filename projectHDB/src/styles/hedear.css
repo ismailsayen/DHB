@@ -13,19 +13,18 @@ header {
 }
 .links{
     width: 20%;
-    margin-right: 5px;
 }
 ul{
     width: 100%;
     display: flex;
     list-style: none;
-    
-}
-ul li a{
-    text-decoration: none ;
+    justify-content: space-evenly;    
+    font-size: 22px;
     color: black;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+}
+ul li a{
+    
 }
