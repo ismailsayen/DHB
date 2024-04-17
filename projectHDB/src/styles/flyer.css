@@ -33,10 +33,7 @@
     text-align: center;
 }
 
-.des {
-    position: relative;
-    bottom: 54px;
-    right: 20px;
+.des {  
     font-size: 1.3em;
     font-family: "Lato", sans-serif;
     font-weight: normal;
@@ -44,8 +41,9 @@
 
 .price {
     font-family: "Lato", sans-serif;
-    font-weight: bold;
-    font-size: 6em;
+    font-weight: 500;
+    font-size: 4em;
+    color: var(--brand-color-600);
 }
 
 .content ul {
@@ -71,6 +69,8 @@
 }
 .cost{
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .flyer-cont button {
