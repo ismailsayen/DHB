@@ -33,16 +33,17 @@
     text-align: center;
 }
 
-.des {  
+.des {
     font-size: 1.3em;
     font-family: "Lato", sans-serif;
     font-weight: normal;
+    margin-right: 20px;
 }
 
 .price {
     font-family: "Lato", sans-serif;
     font-weight: 500;
-    font-size: 4em;
+    font-size: 35px;
     color: var(--brand-color-600);
 }
 
@@ -54,7 +55,7 @@
     padding-left: 40px;
     line-height: 35px;
     font-size: 1.2em;
-  font-weight: 500;
+    font-weight: 500;
 
 }
 
@@ -62,15 +63,18 @@
     text-align: left;
     margin-bottom: 5px;
 }
-.flyer-description{
-    padding-inline: 2rem ;
-	width: 50%;
-    line-height: 40px; 
+
+.flyer-description {
+    padding-inline: 2rem;
+    width: 50%;
+    line-height: 40px;
 }
-.cost{
+
+.cost {
     margin: 20px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .flyer-cont button {
@@ -84,6 +88,7 @@
     cursor: pointer;
     transition: all .2s ease-in;
 }
+
 .flyer-cont button:hover {
     background-color: var(--brand-color-600);
 }
