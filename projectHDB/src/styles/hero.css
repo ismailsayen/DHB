@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
 }
+
 .img1 {
   width: 25%;
   position: absolute;
@@ -19,11 +20,12 @@
   left: 90%;
   top: 50%;
 }
+
 .img2 {
-  width: 50%;
+  width: 500px;
   position: absolute;
   z-index: 2;
-  transition: transform 0.2s ease; 
+  transition: transform 0.2s ease;
 }
 
 .text {
@@ -32,12 +34,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
   z-index: 100;
 }
 
-.text h1{
-  line-height: 87px;
+.text h1 {
   color: var(--brand-color-900);
 }
 
@@ -45,22 +46,28 @@
   position: relative;
   /* border: solid red; */
 }
-.text h1 span::after{
+
+.text h1 span::after {
   content: "";
-  position:absolute;
+  position: absolute;
   width: 100%;
   background-color: var(--brand-color);
   height: 90%;
   left: 0%;
   top: 10%;
-  transform:rotate(10deg) translateX(10px);
+  transform: rotate(10deg) translateX(10px);
   z-index: -1;
-  animation: highlight 1s ease ;
+  animation: highlight 1s ease;
 }
 
 @keyframes highlight {
-  from {width: 5%;}
-  to {width: 100%;}
+  from {
+    width: 5%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 
@@ -68,6 +75,7 @@
   font-size: 24px;
   font-weight: 300;
 }
+
 .btn {
   cursor: pointer;
   position: relative;
@@ -115,4 +123,37 @@
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+}
+
+@media screen and (max-width:400px) {
+  .logo-head {
+    width: 100px;
+    height: 70px;
+  }
+
+  .links {
+    width: 300px;
+  }
+
+  ul {
+    font-size: 18px;
+  }
+
+  .text h1 {
+    line-height: 45px;
+    font-size: 20px;
+  }
+
+  .text p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .img2 {
+    width: 250px;
+    left: 0;
+  }
+  .hero{
+    height: 65vh;
+  }
 }

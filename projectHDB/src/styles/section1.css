@@ -3,7 +3,6 @@
 .sec1 {
   background-color: #f3f4f5;
   position: relative !important;
-  border: solid red;
   padding: 10rem;
 }
 
@@ -66,4 +65,19 @@
   flex-wrap: wrap;
   gap: 20px;
   /* border:  solid red; */
+}
+@media screen and (max-width:400px) {
+  .sec1 {
+    position: relative !important;
+    padding: 6rem;
+  }
+  .card {
+    padding: 20px;
+    width: auto;
+    gap: 3rem;
+  }
+  .titlle h1{
+    font-size: 21px;
+  }
+
 }
