@@ -5,9 +5,9 @@ export default function Header() {
             <img src='/logo.png' width={'140'} height={'100'} />
             <div className='links'>
                 <ul>
-                    <li><a href='#'>Pack 1</a></li>
-                    <li><a href='#'>Projets</a></li>
-                    <li><a href='#'>Contactez-Nous</a></li>
+                    <li><a href='#pack'>Pack 1</a></li>
+                    <li><a href='#projet'>Projets</a></li>
+                    <li><a href='#contact'>Contactez-Nous</a></li>
                 </ul>
             </div>
         </header>

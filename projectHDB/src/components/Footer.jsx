@@ -6,7 +6,7 @@ import { linkPhone } from "../const";
 import { linkSnap } from "../const";
 export default function Footer() {
   return (
-    <footer>
+    <footer id='contact'>
       <div className='info-hedaer'>
         <img src='./logo.png' width={140} height={100} />
         <div className='icons'>

@@ -40,8 +40,9 @@ function Section1() {
           />
         </div>
       </div>
-      <div style={{ margin: "5rem" }} className="cont-cards" data-aos="fade-up"
-        data-aos-duration="3000">
+      <div id="pack"></div>
+      <div  style={{ margin: "5rem" }} className="cont-cards" data-aos="fade-up"
+        data-aos-duration="3000" >
         <Cards />
       </div>
     </div>
