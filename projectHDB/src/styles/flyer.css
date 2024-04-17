@@ -2,18 +2,27 @@
 
 .container-fly {
     width: 99%;
-    background-color: #E6E7E7;
-    margin: 10px auto;
+    background-color: white;
     display: flex;
-    justify-content: center;
-
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px auto;
 }
 
 .flyer-cont {
     width: 730px;
-    border: 4px solid #6EDAE7;
-    border-radius: 15px;
+    border: 4px solid var(--brand-color-950);
+    border-radius: 8px;
     text-align: center;
+    padding: 25px;
+    width: 30%;
+    min-width: 300px;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+    box-shadow: -6px 6px var(--brand-color-600);
 }
 
 .title {
@@ -21,7 +30,7 @@
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-style: italic;
-    font-size: 2.8em;
+    text-align: center;
 }
 
 .des {
@@ -44,10 +53,37 @@
     flex-direction: column;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 10px; 
+    padding-left: 40px;
+    line-height: 35px;
+    font-size: 1.2em;
+  font-weight: 500;
+
 }
-.content ul li{
-    text-align: left; 
-    margin-bottom: 5px; 
+
+.content ul li {
+    text-align: left;
+    margin-bottom: 5px;
+}
+.flyer-description{
+    padding-inline: 2rem ;
+	width: 50%;
+    line-height: 40px; 
+}
+.cost{
+    margin: 20px 0;
+}
+
+.flyer-cont button {
+    border: none;
+    background-color: var(--brand-color);
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--brand-color-950);
+    border-radius: 999px;
+    padding: 14px 25px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.flyer-cont button:hover {
+    background-color: var(--brand-color-600);
 }

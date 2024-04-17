@@ -22,7 +22,7 @@ function Caroussel() {
     return (
         <div className='caross-con'>
             <div className='parent-caross'>
-                <div className='title'>
+                <div className='titlle'>
                     <h1>NOS RÉALISATIONS</h1>
                 </div>
                 <div className='images-con'>

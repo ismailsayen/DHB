@@ -62,3 +62,6 @@ hr {
 .card button:hover {
     background-color: var(--brand-color-600);
 }
+.card-foot a{
+    float: right;
+}

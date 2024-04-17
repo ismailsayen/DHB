@@ -9,13 +9,13 @@ const services = [
         type: "Basique",
         description:
           "Utilisation de thèmes préexistants avec peu de personnalisations",
-        cost: "€400",
+        cost: "$400",
       },
       {
         type: "Avancé",
         description:
           "Personnalisations modérées et quelques fonctionnalités spécifiques",
-        cost: "€400 à €600",
+        cost: "$400 à $600",
       },
     ],
     turnaroundTime: "Près en 24h-48h",
@@ -27,12 +27,12 @@ const services = [
         type: "Basique",
         description:
           "Utilisation de thèmes gratuits ou peu coûteux avec peu de personnalisations",
-        cost: "€500",
+        cost: "$500",
       },
       {
         type: "Avancé",
         description: "Thèmes premium ou personnalisations modérées",
-        cost: "€600 à €800",
+        cost: "$600 à $800",
       },
     ],
     turnaroundTime: "Près en 24h-72h",
@@ -44,7 +44,7 @@ const services = [
         type: "Exclusif",
         description:
           "Thèmes et design sur mesure, développement de plugins spécifiques, fonctionnalités uniques et intégrations complexes avec conception graphique de base HTML, CSS, JavaScript",
-        cost: "€1000 et plus",
+        cost: "$1000 et plus",
       },
     ],
     turnaroundTime: "Durée dépend de la demande du client",
@@ -91,7 +91,8 @@ function Cards() {
             <div className="details">
               <div className="col">
                 <p className="col-type">
-                  <span>Type :</span>
+                  Type :
+                  <span></span>
                   {ele.developmentCosts[0].type}
                 </p>
                 <p className="col-desc">
@@ -99,8 +100,8 @@ function Cards() {
                   {ele.developmentCosts[0].description}
                 </p>
                 <p>
-                  <span className="col-price"> 
-                  {ele.developmentCosts[0].cost}</span>
+                  <span className="col-price">
+                    {ele.developmentCosts[0].cost}</span>
                 </p>
               </div>
             </div>
@@ -108,7 +109,7 @@ function Cards() {
 
           <hr />
           <div className="card-foot">
-            <h4>Livraison à : {ele.turnaroundTime}</h4>
+            <h4>  {ele.turnaroundTime}</h4>
             <a href={linkPhone} target="_blank">
               <button>GO-&gt;</button>
             </a>
