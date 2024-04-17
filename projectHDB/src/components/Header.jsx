@@ -1,7 +1,7 @@
 import '../styles/hedear.css';
 export default function Header() {
     return (
-        <header>
+        <header id='haut'>
             <img src='/logo.png' width={'140'} height={'100'} />
             <div className='links'>
                 <ul>
