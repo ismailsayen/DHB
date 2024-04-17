@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import '../styles/hero.css'; 
+import '../styles/hero.css';
 import { linkPhone } from "../const";
 
 function Hero() {
@@ -21,7 +21,7 @@ function Hero() {
 
     useEffect(() => {
         controls.start({
-            x: scrollY * 1.6, 
+            x: scrollY * 2.5,
         });
     }, [scrollY, controls]);
 

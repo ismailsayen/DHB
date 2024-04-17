@@ -22,6 +22,7 @@
   height: 468px;
   position: absolute;
   z-index: 2;
+  transition: transform 0.1s ease; 
 }
 
 .text {
