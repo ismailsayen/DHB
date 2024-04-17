@@ -20,7 +20,7 @@ function Caroussel() {
         slidesToScroll: 1
     };
     return (
-        <div className='caross-con' id='projet'>
+        <div className='carousel-container' id='projet'>
             <div className='parent-caross'>
                 <div className='titlle'>
                     <h1>NOS RÉALISATIONS</h1>

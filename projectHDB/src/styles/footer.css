@@ -1,6 +1,4 @@
 footer {
-    width: 99%;
-    margin: 0 auto;
     background-image: linear-gradient(to left, #6cdae7, #e7e7e7);
     padding: 30px 10px;
 }
@@ -10,6 +8,7 @@ footer {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    margin-bottom: 2.5rem;
 }
 
 .icons {
@@ -48,8 +47,6 @@ footer {
     
   }
 .copyright {
-    width: 70%;
-    margin: 0 auto;
     text-align: center;
     font-weight: bold;
 }

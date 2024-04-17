@@ -1,4 +1,6 @@
 .hero {
+  border: solid;
+  width: 100%;
   height: 100vh;
   padding-top: 180px;
   background-image: linear-gradient(to left, #6cdae7, #e7e7e7);
@@ -18,11 +20,10 @@
   top: 50%;
 }
 .img2 {
-  width: 499px;
-  height: 468px;
+  width: 50%;
   position: absolute;
   z-index: 2;
-  transition: transform 0.1s ease; 
+  transition: transform 0.2s ease; 
 }
 
 .text {

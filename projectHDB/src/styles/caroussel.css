@@ -1,19 +1,19 @@
-.caross-con{
-    background-image: linear-gradient(to left,#6CDAE7,#e7e7e7);
-    /* overflow: hidden; */
-    border: solid;
+.carousel-container{
+  background-image: linear-gradient(to left, #6cdae7, #e7e7e7);
+  /* overflow: hidden; */
+  border: solid;
+  margin-top: 5rem;
+  padding: 5rem;
+	overflow-x: hidden;
 }
-.parent-caross{
-    padding: 20px 0;}
-.titlle{
-    color: black;
-    text-align: center;
-    margin-bottom: 20px;
+.parent-caross {
 }
-.images-cont{
-    width: 100%;
+.titlle {
+  color: var(--brand-color-950);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.img{
-    object-fit: contain;
+.img {
+  object-fit: contain;
 }

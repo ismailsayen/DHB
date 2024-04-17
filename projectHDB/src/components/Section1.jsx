@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+/* eslint-disable react/no-unescaped-entities */
+import { useEffect } from 'react';
 import "../styles/section1.css";
 import Cards from "./Cards";
-import { linkPhone } from "../const";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function Section1() {
@@ -9,10 +9,9 @@ function Section1() {
     AOS.init();
   }, []);
   return (
-    <div style={{ paddingTop: "10rem" }} className="section sec1">
+    <div className="section sec1">
       <div className="waves">
         <svg
-          style={{ width: "100%" }}
           id="waves"
           viewBox="0 0 1440 230"
           version="1.1"
@@ -27,8 +26,8 @@ function Section1() {
       <div className="sec1-content" data-aos="fade-up"
         data-aos-duration="3000">
         <div className="sec1-content_information">
-          <h2>PACK CONCEPTION ...</h2>
-          <h3>avec notre expertise en création de site web.</h3>
+          <h2>PACK CONCEPTION</h2>
+          <h3>Avec notre expertise en création de site web.</h3>
           <p>
             Notre équipe d'experts en marketing numérique offre une gamme
             complète de services pour optimiser votre site web.
@@ -41,7 +40,7 @@ function Section1() {
         </div>
       </div>
       <div id="pack"></div>
-      <div  style={{ margin: "2rem" }} className="cont-cards" data-aos="fade-up"
+      <div className="cards-container" data-aos="fade-up"
         data-aos-duration="3000" >
         <Cards />
       </div>

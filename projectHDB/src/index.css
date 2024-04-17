@@ -5,6 +5,22 @@
   --brand-color-950: #0e333e;
   --brand-color-600: #188ea2;
 }
+
+* {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--brand-color-900);
+  scroll-behavior: smooth;
+  min-height: none;
+}
+
+#root {
+  width: 100dvw;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -15,38 +31,79 @@ h6 {
 }
 
 h1 {
-  font-size: 58px;
+  font-size: 43.5pt;
   font-weight: 800;
 }
 h2 {
-  font-size: 2.4rem;
-  letter-spacing:3px;
+  text-align: center;
+  font-size: 28.8pt;
+  letter-spacing: 3px;
   font-weight: 900;
   color: var(--brand-color);
 }
 h3 {
-  font-size: 1.75rem;
+  font-size: 21pt;
   font-weight: 700;
 }
 h4 {
   font-weight: 500;
-  font-size: 20px;
-}
-
-* {
-  font-family: "Roboto";
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--brand-color-900);
-  scroll-behavior: smooth;
+  font-size: 15pt;
 }
 
 body {
-  background-color: white ;
-  overflow-x: hidden;
+  background-color: white;
+  /* overflow-x: hidden; */
   scroll-snap-type: y mandatory;
 }
+
+body p {
+  font-size: 16pt;
+}
+
+@media screen and (max-width:1000px) {
+  h1 {
+    font-size: 39pt;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 25pt;
+  }
+  h3 {
+    font-size: 19pt;
+    font-weight: 700;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 13.5pt;
+  }
+  
+  body p {
+    font-size: 14pt;
+  }
+}
+@media screen and (max-width:700px) {
+  h1 {
+    font-size: 32.6pt;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: 21.6pt;
+  }
+  h3 {
+    font-size: 15.75pt;
+    font-weight: 700;
+  }
+  h4 {
+    font-weight: 500;
+    font-size: 12pt;
+  }
+  
+  body p {
+    font-size: 12pt;
+  }
+}
+
+
 
 .slick-slide > div img {
   transition: transform 0.3s ease;
@@ -57,11 +114,8 @@ body {
 }
 
 .section {
+  /* overflow-x: hidden; */
   /* border: solid red ; */
   background-color: white;
   padding-inline: 5rem;
-}
-
-.sec1 {
-  padding-top: 5rem;
 }
