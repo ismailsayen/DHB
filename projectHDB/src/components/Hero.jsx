@@ -19,9 +19,15 @@ function Hero() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    useEffect(() => {
+    const handleResize = () => {
         setSpeed(window.innerWidth > 400 ? 2.5 : 0.5);
+    };
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     useEffect(() => {
