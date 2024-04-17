@@ -28,9 +28,24 @@ footer {
   
   .icons a:nth-child(1) svg {
     color: white;
-    background-color: yellow;
+    background-color: #FFFC00;
     padding: 7px;
-    border-radius: 50%;
+    border-radius: 7px;
+    transition: all .2s ease-in;
+
+  }
+  .icons a:nth-child(1) svg:hover{
+    background-color: #faf603;
+    color: #e7e7e7;
+  }
+  .icons a:nth-child(2) svg{
+    color: #3BC836;
+    transition: all .2s ease-in;
+    font-size: 20px;
+  }
+  .icons a:nth-child(2) svg:hover{
+    color: #38b934;
+    
   }
 .copyright {
     width: 70%;

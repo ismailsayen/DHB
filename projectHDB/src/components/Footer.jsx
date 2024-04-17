@@ -14,7 +14,7 @@ export default function Footer() {
             <FaSnapchat size={55} />
           </a>
           <a href={linkPhone} target='_blank'>
-            <FaSquareWhatsapp size={55} />
+            <FaSquareWhatsapp size={60} />
           </a>
         </div>
       </div>
