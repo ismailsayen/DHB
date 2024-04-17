@@ -50,3 +50,18 @@ footer {
     text-align: center;
     font-weight: bold;
 }
+@media screen and (max-width:400px) {
+  .logo-footer{
+    width: 100px;
+    height: 70px;
+  }
+  .info-hedaer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }  
+  .copyright {
+    font-weight: normal;
+  }
+}

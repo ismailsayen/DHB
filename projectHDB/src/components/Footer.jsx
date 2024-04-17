@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer id='contact'>
       <div className='info-hedaer'>
-        <img src='./logo.png' width={140} height={100} />
+        <img src='./logo.png' className='logo-footer' width={140} height={100} />
         <div className='icons'>
           <a href={linkSnap} target='_blank'>
             <FaSnapchat size={55} />

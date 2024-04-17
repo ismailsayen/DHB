@@ -3,11 +3,10 @@
 .container-fly {
   background-color: white;
   display: flex;
-	flex-wrap: wrap;
-	gap: 5rem;
+  flex-wrap: wrap;
+  gap: 5rem;
   justify-content: center;
   align-items: center;
-  border: solid red;
   padding: 10rem 5rem;
 }
 
@@ -66,15 +65,15 @@
 
 .flyer-description {
   padding-inline: 2rem;
-	min-width: 500px;
-	width: 50%;
+  min-width: 500px;
+  width: 50%;
   line-height: 40px;
 }
 
 @media screen and (max-width:700px) {
-	.flyer-description {
-		text-align: center;
-	}
+  .flyer-description {
+    text-align: center;
+  }
 }
 
 .cost {
@@ -98,4 +97,12 @@
 
 .flyer-cont button:hover {
   background-color: var(--brand-color-600);
+}
+
+@media screen and (max-width:400px) {
+  .flyer-description p {
+    font-size: 12px;
+    padding: 0px 21px;
+    margin: 0 10px;
+  }
 }
