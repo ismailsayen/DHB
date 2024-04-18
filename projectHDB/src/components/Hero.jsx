@@ -21,7 +21,7 @@ function Hero() {
     }, []);
 
     const handleResize = () => {
-        setSpeed(window.innerWidth > 400 ? 2.5 : 0.5);
+        setSpeed(window.innerWidth > 500 ? 2.5 : 0.5);
     };
 
     useEffect(() => {

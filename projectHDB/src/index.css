@@ -119,3 +119,8 @@ body p {
   background-color: white;
   padding-inline: 5rem;
 }
+
+@media screen and (max-width:400px) {
+  .section {
+        padding-inline: 3rem;
+      }}

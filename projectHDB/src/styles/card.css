@@ -86,7 +86,7 @@ hr {
 }
 
 
-  @media screen and (max-width:400px) {
+  @media screen and (max-width:500px) {
     .col-desc {
         padding-left: 10px;
         line-height: 2rem;

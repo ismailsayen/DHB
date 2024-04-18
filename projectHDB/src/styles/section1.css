@@ -79,14 +79,13 @@
   /* border:  solid red; */
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
   .section {
-      
-    padding-inline: 2rem;
+        padding-inline: 3rem;
   }
   .sec1 {
     position: relative !important;
-    padding: 6rem;
+    padding: 3rem;
   }
 
   .card {

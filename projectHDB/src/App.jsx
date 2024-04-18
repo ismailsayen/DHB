@@ -10,7 +10,7 @@ import { FaAngleUp } from "react-icons/fa6";
 function App() {
   const [name, setName] = useState("");
   const handleResize = () => {
-    setName(window.innerWidth > 400 ? "haut" : "Up");
+    setName(window.innerWidth > 500 ? "haut" : "Up");
   };
 
   useEffect(() => {
