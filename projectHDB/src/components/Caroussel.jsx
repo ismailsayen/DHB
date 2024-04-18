@@ -1,4 +1,5 @@
 import '../styles/caroussel.css';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -6,12 +7,25 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 const pictures = [
-    { url: "neon.png", link: "https://neonunivers.com/" },
-    { url: "outako.png", link: "https://shonensports.com/" },
-    { url: "sport.png", link: "https://quedufootcom.com/" },
+    { url: "neon", link: "https://neonunivers.com/" },
+    { url: "outako", link: "https://shonensports.com/" },
+    { url: "sport", link: "https://quedufootcom.com/" },
 ];
 
 function Caroussel() {
+    const [name, setName] = useState("");
+    const handleResize = () => {
+        setName(window.innerWidth > 500 ? "pc" : "phone");
+    };
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div className='carousel-container' id='projet'>
             <div className='parent-caross'>
@@ -30,7 +44,11 @@ function Caroussel() {
                         {pictures.map((picture, index) => (
                             <SwiperSlide>
                                 <a href={picture.link} target="_blank" rel="noopener noreferrer">
-                                    <img src={`./images/${picture.url}`} key={index} alt={`Image ${index + 1}`} />
+                                    <img
+                                        src={`./images/${name === "pc" ? picture.url + ".png" : picture.url + "-mobile.png"}`}
+                                        key={index}
+                                        alt={`Image ${index + 1}`}
+                                    />
                                 </a>
                             </SwiperSlide>
 
