@@ -20,7 +20,7 @@ function Flyer() {
                     <h3 className='title'>PACK FLYER ESSENTIEL</h3>
                     <hr />
                     <div className='cost'>
-                        <span className='des'>À Partir de :</span>
+                        <span className='des'>À Partir de</span>
                         <span className='price'>50$</span>
                     </div>
 
