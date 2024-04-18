@@ -16,11 +16,23 @@
   object-fit: contain;
 }
 
+.images-con img {
+  height: 500px;
+}
+
+.images-con {
+  text-align: center;
+}
+
 @media screen and (max-width:500px) {
   .titlle h1 {
     font-size: 21px;
   }
-
+  .images-con img {
+    height: 500px;
+    width: -moz-available;
+  }
+  
   .carousel-container {
     overflow: hidden;
     margin-top: 5rem;
