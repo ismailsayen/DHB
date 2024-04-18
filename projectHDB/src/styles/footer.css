@@ -31,8 +31,9 @@ footer {
     padding: 7px;
     border-radius: 7px;
     transition: all .2s ease-in;
-
-  }
+    width: 55px;
+    height: 55px;
+    }
   .icons a:nth-child(1) svg:hover{
     background-color: #faf603;
     color: #e7e7e7;
@@ -40,11 +41,11 @@ footer {
   .icons a:nth-child(2) svg{
     color: #3BC836;
     transition: all .2s ease-in;
-    font-size: 20px;
+    width: 60px;
+    height: 60px;
   }
   .icons a:nth-child(2) svg:hover{
     color: #38b934;
-    
   }
 .copyright {
     text-align: center;
@@ -56,11 +57,23 @@ footer {
     height: 70px;
   }
   .info-hedaer {
-    width: 100%;
+    width: 85%;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
   }  
+  .icons {
+    justify-content: space-around;
+    width: 100px;
+  }
+  .icons a:nth-child(1) svg{
+    width: 40px;
+    height: 40px;
+  }
+  .icons a:nth-child(2) svg{
+    width: 40px;
+    height: 40px;
+  }
   .copyright {
     font-weight: normal;
   }

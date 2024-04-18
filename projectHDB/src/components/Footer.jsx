@@ -11,10 +11,10 @@ export default function Footer() {
         <img src='./logo.png' className='logo-footer' width={140} height={100} />
         <div className='icons'>
           <a href={linkSnap} target='_blank'>
-            <FaSnapchat size={55} />
+            <FaSnapchat  />
           </a>
           <a href={linkPhone} target='_blank'>
-            <FaSquareWhatsapp size={60} />
+            <FaSquareWhatsapp  />
           </a>
         </div>
       </div>
