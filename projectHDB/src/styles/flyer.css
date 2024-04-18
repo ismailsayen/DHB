@@ -107,10 +107,10 @@
 @media screen and (max-width:400px) {
   .flyer-description p {
     font-size: 12px;
-    padding: 0px 21px;
-    margin: 0 10px;
   }
-  .flyer-description h2{
-    margin-left: 30px;
+  .flyer-description{
+    padding: 0px 76px;
+    text-align: left;
   }
+  
 }
