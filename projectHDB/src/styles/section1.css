@@ -29,6 +29,10 @@
 }
 .sec1-content_information h2 {
   color: var(--brand-color);
+  text-align: left;
+}
+.sec1-content_information p{
+  text-align: justify;
 }
 .sec1-content .img {
   border: none;

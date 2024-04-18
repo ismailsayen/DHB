@@ -84,3 +84,19 @@ hr {
 .card-foot a{
     float: right;
 }
+
+
+  @media screen and (max-width:400px) {
+    .col-desc {
+        padding-left: 10px;
+        line-height: 2rem;
+        text-align: center;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        margin-bottom: 1rem;
+      }
+      .col-price {
+        font-weight: 500;
+        font-size: 21px;
+      }
+  }
