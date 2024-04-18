@@ -80,6 +80,10 @@
 }
 
 @media screen and (max-width:400px) {
+  .section {
+      
+    padding-inline: 2rem;
+  }
   .sec1 {
     position: relative !important;
     padding: 6rem;

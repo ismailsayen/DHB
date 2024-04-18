@@ -156,5 +156,6 @@
   }
   .hero{
     height: 65vh;
+    padding-top: 150px;
   }
 }
