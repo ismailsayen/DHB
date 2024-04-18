@@ -12,7 +12,7 @@ export default function Header() {
                     </ul>
                 </div>
             </header>
-            <section class="top-nav">
+            <section class="top-nav" id='Up'>
                 <div>
                     <img src='/logo.png' className='logo-head' width={'140'} height={'100'} />
                 </div>
