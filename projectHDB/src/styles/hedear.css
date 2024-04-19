@@ -150,8 +150,8 @@ header {
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
-        color: black;
-        backdrop-filter: blur(8px) !important;
+        color: white;
+        background-color: black;
         font-weight: bold;
     }
 
